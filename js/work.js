@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const project1 = {
   image: "assets/project/ecom.png",
   name: "Task Notifier",
