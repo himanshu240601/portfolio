@@ -30,7 +30,6 @@ const project4 = {
   description: "Online apparel store with modules for seller amd user. Features beautiful ui and great user experience.",
   tags: "Web, Php, Mysql, Bootstrap, Javascript"
 }
-=======
 let project1 = `<div id="spotify" class="row align-items-center text-end">
 <div class="col-md-6 project_desc">
     <h5 class="project_title">Spotify Clone</h5>
@@ -104,7 +103,6 @@ let project4 = `<div id="healthapp" class="row align-items-center text-end">
     <img src="../assets/project/health.png" class="w-100 p_img" alt="">
 </div>
 </div>`;
->>>>>>> 3db3cdfeec54e21c7fd8b683b72c115c2c6d3079
 
 const projects = [project1, project2, project3, project4]
 
