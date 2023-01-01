@@ -3,7 +3,8 @@ const project1 = {
   name: "Task Notifier",
   category: "Android Application",
   description: "A notifier app that provides a collaborative task management system with alerts realted to tasks.",
-  tags: "Android, Java, Kotlin, Firebase, Fcm"
+  tags: "Android, Java, Kotlin, Firebase, Fcm",
+  link: "https://github.com/himanshu240601/cp-activity-notifier"
 }
 
 const project2 = {
@@ -11,7 +12,8 @@ const project2 = {
   name: "Health App",
   category: "Android Application",
   description: "Health & Fitness based app for analysing daily activities, mood and sleep of the user.",
-  tags: "Android, Java, Php, Mysql, Retrofit"
+  tags: "Android, Java, Php, Mysql, Retrofit",
+  link: "https://github.com/himanshu240601/cp-health-app"
 }
 
 const project3 = {
@@ -19,7 +21,8 @@ const project3 = {
   name: "Music App",
   category: "Android Application",
   description: "Music application for android devices. Play in shuffle, repeat and save songs to a favourite playlist.",
-  tags: "Android, Java, Mvvm"
+  tags: "Android, Java, Mvvm",
+  link: "https://github.com/himanshu240601/music-app-java"
 }
 
 const project4 = {
@@ -27,7 +30,8 @@ const project4 = {
   name: "Stylin E-Commerce Store",
   category: "Website",
   description: "Online apparel store with modules for seller amd user. Features beautiful ui and great user experience.",
-  tags: "Web, Php, Mysql, Bootstrap, Javascript"
+  tags: "Web, Php, Mysql, Bootstrap, Javascript",
+  link: "https://github.com/himanshu240601/ecommerce-website"
 }
 
 const projects = [project1, project2, project3, project4]
@@ -50,7 +54,7 @@ function createCards() {
     </div>
     <div class="card-text p-4">
       <h6>${projects[i].category}</h6>
-      <h4><a href="#">${projects[i].name}</a></h4>
+      <h4><a href=${projects[i].link} target="_blank">${projects[i].name}</a></h4>
       <p>${projects[i].description}</p>
       <div class="tags">
       ${tags}

@@ -180,7 +180,7 @@ footer{
 
 .connect-link a {
     text-decoration: none;
-    color: dodgerblue;
+    color: grey;
 }
 
 .connect-link a:hover i::after {
@@ -195,7 +195,7 @@ footer{
 }
 
 .connect-link a:hover i{
-    border-color: rgb(195, 225, 255);
+    border-color: transparent;
 }
 
 .connect-link i {
