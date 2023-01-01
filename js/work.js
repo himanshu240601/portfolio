@@ -1,5 +1,5 @@
 const project1 = {
-  image: "assets/project/ecom.png",
+  image: "assets/project/task.png",
   name: "Task Notifier",
   category: "Android Application",
   description: "A notifier app that provides a collaborative task management system with alerts realted to tasks.",
@@ -43,7 +43,7 @@ function createCards() {
       tags += `<span>${tags_arr[j]}</span> `
     }
 
-    container.innerHTML += `<div class="col-md-6 px-2 pb-5">
+    container.innerHTML += `<div class="col-md-6 px-md-2 pb-5">
   <div class="card">
     <div class="img">
       <img src="${projects[i].image}" class="w-100" alt="">

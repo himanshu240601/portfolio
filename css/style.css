@@ -12,35 +12,59 @@ body {
 }
 
 /* navbar */
-.navbar-brand{
+.navbar-brand {
     font-weight: 300;
     font-size: 18px;
 }
-nav a{
+
+nav a {
     color: grey;
     text-decoration: none;
-}
-nav a:hover{
-    color: dodgerblue;
+    position: relative;
+    transition: all .3s ease-in-out;
 }
 
+nav .nav a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 0;
+    background-color: dodgerblue;
+    border-radius: 100px;
+    transition: all .3s ease-in-out;
+}
+
+nav li:hover a {
+    letter-spacing: 2px;
+}
+
+nav li:hover a::after {
+    width: 100%;
+}
 /* main section */
-#main-section{
+#main-section {
     height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
     position: relative;
 }
-.greeting{
+
+.greeting {
     font-size: 24px;
     font-weight: 300;
 }
-.description{
+
+.description {
     font-size: 32px;
     font-weight: 500;
 }
-.bi-arrow-down-short{
+
+.bi-arrow-down-short {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -48,25 +72,31 @@ nav a:hover{
     animation: up-down 2s infinite ease-in-out alternate-reverse;
 }
 
-@keyframes up-down{
-    0%{
+@keyframes up-down {
+    0% {
         bottom: 25%;
-    }50%{
+    }
+
+    50% {
         bottom: 27%;
-    }100%{
+    }
+
+    100% {
         bottom: 25%;
     }
 }
 
 /* about section */
-#about-section{
+#about-section {
     height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
     position: relative;
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 0.15) 0%, hsla(216, 41%, 79%, 0.15) 50%);
 }
-.resume-download{
+
+.resume-download {
     margin-top: 1rem;
     border: 1px solid gainsboro;
     padding: .75rem 2rem;
@@ -74,187 +104,123 @@ nav a:hover{
     font-size: 14px;
 }
 
+.resume-download:hover {
+    border-color: rgb(195, 225, 255);
+}
+
 /* work section */
-#work-section{
-    padding: 3rem;
+#work-section {
+    padding: 3rem 0;
 }
-#work-section p.mb-5{
-    font-size: 20px;
-    font-weight: 300;
-}
-.card{
+
+.card {
     border: none;
     box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.1);
 }
-.card img{
+
+.card img:hover {
+    height: 400px;
+}
+
+.card .img {
     height: 300px;
 }
-.card h6{
+
+.card img {
+    height: 300px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+}
+
+.card .card-text {
+    background-color: white;
+}
+
+.card h6 {
     font-size: 15px;
     color: gray;
 }
-.card h4 a{
+
+.card a {
     font-size: 28px;
     font-weight: 600;
-    cursor: pointer;
     color: black;
     text-decoration: none;
 }
-.card h4 a:hover{
+
+.card a:hover {
     color: dodgerblue;
 }
-.card p{
+
+.card p {
     font-size: 16px;
 }
-.card span{
+
+.card span {
     font-size: 12px;
     padding: 8px;
     background-color: aliceblue;
     border-radius: 100px;
+    margin: 8px 0;
 }
 
 /* footer */
-.copyright{
+footer{
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 0.15) 0%, hsla(216, 41%, 79%, 0.15) 50%);
+}
+.copyright {
     font-size: 14px;
 }
-.copyright, .connect-link{
+
+.copyright,
+.connect-link {
     font-family: 'Montserrat', sans-serif;
 }
-.connect-link a{
+
+.connect-link a {
     text-decoration: none;
-    color: rgb(119, 119, 119);
-}
-.connect-link a:hover{
     color: dodgerblue;
 }
-.connect-link i{
+
+.connect-link a:hover i::after {
+    height: 100%;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+}
+
+.connect-link a:hover {
+    color: white;
+}
+
+.connect-link a:hover i{
+    border-color: rgb(195, 225, 255);
+}
+
+.connect-link i {
     border: 1px solid gainsboro;
-    padding: .75rem;
+    padding: 1rem;
     border-radius: 100px;
-}
-
-
-<!-----------------------------------------    ------------------------------------------->
-/* home page */
-#intro {
-    height: 100vh;
-    color: white;
-    display: flex;
-    align-items: center;
     position: relative;
 }
 
-#intro .container {
-    position: relative;
-}
-
-#intro .row .anim {
-    animation: image_anim 3s ease-in-out 0s infinite alternate-reverse;
-}
-
-@keyframes image_anim {
-    0% {
-        transform: translateY(-1.5rem);
-    }
-
-    100% {
-        transform: translateY(1.5rem);
-    }
-}
-
-.name, .profile {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.hi {
-    font-size: 48px;
-    font-weight: 300;
-    opacity: .8;
-}
-
-.name {
-    font-weight: 600;
-    font-size: 58px;
-}
-
-.profile {
-    font-size: 17px;
-    font-weight: 200;
-    opacity: .8;
-    letter-spacing: 1px;
-    margin-bottom: 2rem;
-}
-
-.about-me {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 300;
-    transition: .3s ease;
-    position: relative;
-}
-
-.about-me::before{
+.connect-link i::after {
     content: "";
     display: block;
-    height: 1px;
-    width: 0%;
+    height: 0;
+    width: 0;
+    background-color: dodgerblue;
+    transition: all .3s ease-in-out;
     position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: .3s ease;
-}
-.about-me:hover{
-    color: #ca6035;
-}
-.about-me:hover::before {
-    background-color: #ca6035;
-    width: 100%;
-}
-
-/* background doodles */
-.doodles {
-    position: absolute;
-    height: 100px;
-    top: 0;
-    left: 0;
-    animation: rotate 20s ease-in-out 0s infinite;
+    bottom: 50%;
+    left: 50%;
+    border-radius: 100px;
     z-index: -1;
 }
 
-.doodle-1 {
-    top: 70%;
-    left: 25%;
-}
-
-.bi-arrow-right {
-    font-size: 15px;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.social-icons{
-    position: fixed;
-    bottom: 1rem;
-    right: 0;
-}
-.social-link{
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-    background-color: #ca6035;
-    transition: .3s ease;
-}
-.social-link:hover{
-    border-radius: 100px;
-    color: #ca6035;
-    background-color: #ca5f3500;
+/* common */
+p.mb-5 {
+    font-size: 20px;
+    font-weight: 300;
 }
