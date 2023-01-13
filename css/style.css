@@ -16,6 +16,9 @@ body {
     font-weight: 300;
     font-size: 18px;
 }
+.navbar-brand:hover{
+    color: dodgerblue;
+}
 
 nav a {
     color: grey;
