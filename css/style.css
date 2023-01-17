@@ -13,15 +13,14 @@ body {
 
 /* navbar */
 .navbar-brand {
-    font-weight: 300;
     font-size: 18px;
 }
 .navbar-brand:hover{
-    color: dodgerblue;
+    letter-spacing: 1px;
 }
 
 nav a {
-    color: grey;
+    color: black;
     text-decoration: none;
     position: relative;
     transition: all .3s ease-in-out;
@@ -50,10 +49,17 @@ nav li:hover a::after {
 }
 /* main section */
 #main-section {
+    background: url('https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+    background-size: cover;
     height: 100vh;
+}
+
+.main-section{
+    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     position: relative;
 }
 
