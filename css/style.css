@@ -59,6 +59,7 @@ nav li:hover a::after {
     align-items: center;
     justify-content: center;
     position: relative;
+    text-align: center;
 }
 
 .greeting {
