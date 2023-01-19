@@ -1,27 +1,27 @@
 const project1 = {
   image: "assets/project/task.png",
   name: "Task Notifier",
-  category: "Android Application",
+  category: "Android App",
   description: "A notifier app that provides a collaborative task management system with alerts realted to tasks.",
-  tags: "Android, Java, Kotlin, Firebase, Fcm",
+  tags: "JAVA, KOTLIN, XML, FIREBASE",
   link: "https://github.com/himanshu240601/cp-activity-notifier"
 }
 
 const project2 = {
   image: "assets/project/health.png",
   name: "Health App",
-  category: "Android Application",
+  category: "Android App",
   description: "Health & Fitness based app for analysing daily activities, mood and sleep of the user.",
-  tags: "Android, Java, Php, Mysql, Retrofit",
+  tags: "JAVA, XML, PHP, MYSQL, RETROFIT",
   link: "https://github.com/himanshu240601/cp-health-app"
 }
 
 const project3 = {
   image: "assets/project/music.png",
   name: "Music App",
-  category: "Android Application",
+  category: "Android App",
   description: "Music application for android devices. Play in shuffle, repeat and save songs to a favourite playlist.",
-  tags: "Android, Java, Mvvm",
+  tags: "JAVA, XML",
   link: "https://github.com/himanshu240601/music-app-java"
 }
 
@@ -30,7 +30,7 @@ const project4 = {
   name: "Stylin E-Commerce Store",
   category: "Website",
   description: "Online apparel store with modules for seller amd user. Features beautiful ui and great user experience.",
-  tags: "Web, Php, Mysql, Bootstrap, Javascript",
+  tags: "HTML, CSS, JAVASCRIPT, PHP, MYSQL",
   link: "https://github.com/himanshu240601/ecommerce-website"
 }
 

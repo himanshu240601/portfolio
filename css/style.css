@@ -15,7 +15,8 @@ body {
 .navbar-brand {
     font-size: 18px;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     letter-spacing: 1px;
 }
 
@@ -47,12 +48,13 @@ nav li:hover a {
 nav li:hover a::after {
     width: 100%;
 }
+
 /* main section */
 #main-section {
     height: 100vh;
 }
 
-.main-section-div{
+.main-section-div {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -63,13 +65,14 @@ nav li:hover a::after {
 }
 
 .greeting {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 300;
 }
 
 .description {
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 600;
+    opacity: .9;
 }
 
 .bi-arrow-down-short {
@@ -104,18 +107,6 @@ nav li:hover a::after {
     background: linear-gradient(90deg, hsla(186, 33%, 94%, 0.15) 0%, hsla(216, 41%, 79%, 0.15) 50%);
 }
 
-.resume-download {
-    margin-top: 1rem;
-    border: 1px solid gainsboro;
-    padding: .75rem 2rem;
-    border-radius: 100px;
-    font-size: 14px;
-}
-
-.resume-download:hover {
-    border-color: rgb(195, 225, 255);
-}
-
 /* work section */
 #work-section {
     padding: 3rem 0;
@@ -146,15 +137,17 @@ nav li:hover a::after {
 }
 
 .card h6 {
-    font-size: 15px;
-    color: gray;
+    font-size: 12px;
+    color: dodgerblue;
+    text-transform: uppercase;
 }
 
 .card a {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 800;
     color: black;
     text-decoration: none;
+    opacity: .9;
 }
 
 .card a:hover {
@@ -162,21 +155,22 @@ nav li:hover a::after {
 }
 
 .card p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .card span {
-    font-size: 12px;
+    font-size: 11px;
     padding: 8px;
-    background-color: aliceblue;
-    border-radius: 100px;
+    font-weight: 500;
+    background-color: rgba(30, 143, 255, 0.1);
     margin: 8px 0;
 }
 
 /* footer */
-footer{
+footer {
     background: linear-gradient(90deg, hsla(186, 33%, 94%, 0.15) 0%, hsla(216, 41%, 79%, 0.15) 50%);
 }
+
 .copyright {
     font-size: 14px;
 }
@@ -186,49 +180,47 @@ footer{
     font-family: 'Montserrat', sans-serif;
 }
 
-.connect-link a {
-    text-decoration: none;
-    color: grey;
+.connect-link a{
+    color: black;
+    font-size: 34px;
 }
 
-.connect-link a:hover i::after {
-    height: 100%;
-    width: 100%;
-    bottom: 0%;
-    left: 0%;
-}
-
-.connect-link a:hover {
-    color: white;
-}
-
-.connect-link a:hover i{
-    border-color: transparent;
-}
-
-.connect-link i {
-    border: 1px solid gainsboro;
-    padding: 1rem;
-    border-radius: 100px;
-    position: relative;
-}
-
-.connect-link i::after {
-    content: "";
-    display: block;
-    height: 0;
-    width: 0;
-    background-color: dodgerblue;
-    transition: all .3s ease-in-out;
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    border-radius: 100px;
-    z-index: -1;
-}
 
 /* common */
 p.mb-5 {
     font-size: 20px;
     font-weight: 300;
+}
+
+
+
+/* background animations */
+.circle-bg {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 1000px;
+    background-image: linear-gradient(90deg, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.circle-bg-2 {
+    height: 240px;
+    width: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .5;
+    animation: circle-animation-1 .7s ease-in-out 0s 1;
+}
+
+@keyframes circle-animation-1 {
+    from {
+        height: 0px;
+        width: 0px;
+    }
+
+    to {
+        height: 240px;
+        width: 240px;
+    }
 }
