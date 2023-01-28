@@ -174,16 +174,17 @@ footer {
 .copyright {
     font-size: 14px;
 }
-
-.copyright,
-.connect-link {
-    font-family: 'Montserrat', sans-serif;
+footer li a{
+    position:relative;
+}
+footer li img{
+    transition: all .3s ease-in-out;
+}
+footer li img:hover{
+    transform: translateY(-4px);
 }
 
-.connect-link a{
-    color: black;
-    font-size: 34px;
-}
+
 
 
 /* common */
